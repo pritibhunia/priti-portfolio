@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/priti-portfolio/static/css/main.53845d2e.chunk.css",
+    "main.js": "/priti-portfolio/static/js/main.189637dc.chunk.js",
+    "main.js.map": "/priti-portfolio/static/js/main.189637dc.chunk.js.map",
+    "runtime-main.js": "/priti-portfolio/static/js/runtime-main.dfc60215.js",
+    "runtime-main.js.map": "/priti-portfolio/static/js/runtime-main.dfc60215.js.map",
+    "static/css/2.e7e3a0ad.chunk.css": "/priti-portfolio/static/css/2.e7e3a0ad.chunk.css",
+    "static/js/2.067befed.chunk.js": "/priti-portfolio/static/js/2.067befed.chunk.js",
+    "static/js/2.067befed.chunk.js.map": "/priti-portfolio/static/js/2.067befed.chunk.js.map",
+    "static/js/3.27caab5c.chunk.js": "/priti-portfolio/static/js/3.27caab5c.chunk.js",
+    "static/js/3.27caab5c.chunk.js.map": "/priti-portfolio/static/js/3.27caab5c.chunk.js.map",
+    "index.html": "/priti-portfolio/index.html",
+    "static/css/2.e7e3a0ad.chunk.css.map": "/priti-portfolio/static/css/2.e7e3a0ad.chunk.css.map",
+    "static/css/main.53845d2e.chunk.css.map": "/priti-portfolio/static/css/main.53845d2e.chunk.css.map",
+    "static/js/2.067befed.chunk.js.LICENSE.txt": "/priti-portfolio/static/js/2.067befed.chunk.js.LICENSE.txt",
+    "static/media/bannerImg.f5bf8e89.jpeg": "/priti-portfolio/static/media/bannerImg.f5bf8e89.jpeg",
+    "static/media/PageLayout.module.css": "/priti-portfolio/static/media/bgImage.855d64ac.jpeg",
+    "static/media/bootstrap-icons.css": "/priti-portfolio/static/media/bootstrap-icons.dfd0ea12.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfc60215.js",
+    "static/css/2.e7e3a0ad.chunk.css",
+    "static/js/2.067befed.chunk.js",
+    "static/css/main.53845d2e.chunk.css",
+    "static/js/main.189637dc.chunk.js"
+  ]
+}
