@@ -1,0 +1,25 @@
+.navbar .nav-link, .navbar .navbar-brand {
+    color: aqua !important;
+}
+.navbar .navbar-nav {
+    column-gap: 5px;
+}
+
+.navbar .nav-link {
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    background-color: blue;
+    width: 0%;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.navbar .nav-link:hover:after, .navbar .nav-link.active:after {
+    width: 100%;
+}

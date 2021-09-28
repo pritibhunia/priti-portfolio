@@ -1,0 +1,29 @@
+.typewriter {
+    display        : flex;
+    justify-content: center;
+}
+
+.typewriter .typing {
+    overflow      : hidden;
+    font-weight   : bolder;
+    border-right  : .15em solid orange;
+    white-space   : pre;
+    margin        : 0 auto;
+    letter-spacing: .15em;
+    width         : 0%;
+    text-transform: uppercase;
+    animation     :
+        typing 3s steps(17) infinite,
+        blink-caret .75s infinite;
+}
+
+@keyframes typing {
+    from, to { width: 0 }
+    40% { width: 100% }
+    60% { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #30bbda; }
+}
