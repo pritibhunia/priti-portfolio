@@ -20,22 +20,19 @@ const AppNavigation = (props) => {
                     {/* <div className="me-auto"></div> */}
                     <ul className="navbar-nav nav-fill">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/" activeClassName="active" exact onClick={toggleNavbar}>Home</NavLink>
+                            <NavLink className="nav-link" to="/" activeClassName="active" exact onClick={toggleNavbar}><span>Home</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/about" activeClassName="active" onClick={toggleNavbar}>About</NavLink>
+                            <NavLink className="nav-link" to="/about" activeClassName="active" onClick={toggleNavbar}><span>About</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/experience" activeClassName="active" onClick={toggleNavbar}>Experience</NavLink>
+                            <NavLink className="nav-link" to="/resume" activeClassName="active" onClick={toggleNavbar}><span>Resume</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/resume" activeClassName="active" onClick={toggleNavbar}>Resume</NavLink>
+                            <NavLink className="nav-link" to="/blog" activeClassName="active" onClick={toggleNavbar}><span>Blog</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/blog" activeClassName="active" onClick={toggleNavbar}>Blog</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/contact" activeClassName="active" onClick={toggleNavbar}>Contact</NavLink>
+                            <NavLink className="nav-link" to="/contact" activeClassName="active" onClick={toggleNavbar}><span>Contact</span></NavLink>
                         </li>
                     </ul>
                 </div>

@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className={`${classes.HomePage} row`}>
             <div className={classes.bgImage}></div>
             <div className={`${classes.banner} col-lg-6 col-md-12`}>
-                <img className={classes.bannerImg} src={bannerImg} alt="Banner" />
+                <img className={`${classes.bannerImg} ani-popIn`} src={bannerImg} alt="Banner" />
             </div>
             <div className={`${classes.content}  col-lg-6 col-md-12`}>
                 <h1 className={classes.greet}>Hello!!!</h1>
@@ -18,7 +18,7 @@ const HomePage = () => {
                 <TypingContent className={classes.subtitle} data={data.subtitle}></TypingContent>
                 <div className={classes.description}>{data.description}</div>
                 <div className={classes.actionBtn}>
-                    <NavLink className="btn btn-outline-primary mt-5" to="/about">Get in touch</NavLink>
+                    <NavLink className="btn btn-outline-info mt-5" to="/contact">Get in touch</NavLink>
                 </div>
             </div>
         </div>
