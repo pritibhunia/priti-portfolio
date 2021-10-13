@@ -1,0 +1,26 @@
+.section {
+    color         : white;
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 20px;
+
+    .sectionHeader {
+        color        : white;
+        font-size    : 2rem;
+        position     : relative;
+        font-weight  : bold;
+        align-self   : center;
+        margin-bottom: 3rem;
+
+        &::before {
+            content      : '';
+            border-bottom: 4px solid white;
+            width        : 100%;
+            margin-top   : 10px;
+            position     : absolute;
+            bottom       : -1rem;
+        }
+    }
+
+    .sectionBody {}
+}

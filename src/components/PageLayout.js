@@ -9,10 +9,10 @@ const PageLayout = (props) => {
         <div className={`${classes.app} ${props.className}`}>
             {/* <div className={classes.bgImage}></div> */}
             {/* <img className={classes.bgImage} src={bgImage} alt="Background"/> */}
-            <header id="app-header" className={`${classes.appHeader} ${classes.stickyHeader}`}> 
+            <header id="app-header" className={`${classes.appHeader} ${classes.stickyHeader}`}>
                 <AppNavigation></AppNavigation>
             </header>
-            <main className={`${classes.appBody} container`}>
+            <main className={`${classes.appBody}`}>
                 {props.children}
             </main>
             <footer className={classes.appFooter}>

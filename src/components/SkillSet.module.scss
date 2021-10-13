@@ -1,0 +1,24 @@
+.skillSetSection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-top: 60px;
+
+    @media (max-width: 760px) {
+        flex-direction: column-reverse;
+    }
+
+    .skillDesc {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 50px 0px;
+
+        p, h5 {
+            opacity: 0;
+        }
+    }
+    .skillSet {
+        flex-basis: 50%;
+    }
+}

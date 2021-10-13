@@ -1,0 +1,36 @@
+.featureList {
+    display       : flex;
+    flex-direction: row;
+    column-gap    : 30px;
+    counter-reset : feature;
+
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
+
+    .featureItem {
+        counter-increment: feature;
+        flex             : 1 1 0px;
+        display          : flex;
+        flex-direction   : column;
+        align-items      : center;
+        row-gap          : 5px;
+        transform        : scale(0.8);
+        opacity          : 0;
+
+        .featureBanner {
+            width           : 100px;
+            height          : 100px;
+            background-color: #74cacf;
+            clip-path       : polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            margin-bottom   : 10px;
+            padding         : 15px;
+        }
+
+        .featureTitle {
+            color: #74cacf;
+        }
+
+        .featureDesc {}
+    }
+}

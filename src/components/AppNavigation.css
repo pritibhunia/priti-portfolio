@@ -5,7 +5,12 @@
 
 .navbar .navbar-nav {
     column-gap: 5px;
-    width     : 40%;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        width: 40%;
+    }
 }
 
 .navbar .nav-item .nav-link {

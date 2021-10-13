@@ -1,0 +1,55 @@
+.pannel {
+    display       : flex;
+    column-gap    : 10px;
+    flex-direction: row;
+    padding       : 20px 10px;
+    padding-bottom: 30px;
+    position      : relative;
+
+    &:nth-child(odd) {
+        flex-direction: row !important;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse !important;
+    }
+
+    &::after {
+        content         : '';
+        border-bottom   : 1px solid;
+        position        : absolute;
+        width           : 80%;
+        left            : 10%;
+        margin          : 1rem 0;
+        color           : inherit;
+        background-color: currentColor;
+        opacity         : 0.25;
+        height          : 1px;
+        bottom          : -1rem;
+    }
+
+    &:last-child::after {
+        width: 100%;
+        left: 0px;
+    }
+
+    .achievementHeader {
+        padding   : 10px;
+        flex-basis: 30%;
+    }
+
+    .achievementContent {
+        padding   : 10px;
+        flex-basis: 70%;
+    }
+}
+
+.hr:not(:last-child) {
+    width       : 90%;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.hr:last-child {
+    width: 100%;
+}

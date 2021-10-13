@@ -1,11 +1,19 @@
 import React from 'react';
-import classes from './AboutPage.module.css';
+import Features from '../components/Features';
+import Section from '../components/Section';
+import SkillSet from '../components/SkillSet';
+import classes from './AboutPage.module.scss';
+// import moduleName from '../assets/images/dummy.jpg'
 
 const AboutPage = (props) => {
+    document.title = 'Priti Bhunia | About Me';
+    // CSS, HTML, JavaScript, Python, Power Shell, SQL, Azure, DevOps
     return (
-        <div className={classes.AboutPage}>
-            
-        </div>
+        <Section className={`${classes.AboutPage} container mt-5`}>
+            {/* <Achievements></Achievements> */}
+            <Features className='mt-3'></Features>
+            <SkillSet></SkillSet>
+        </Section>
     )
 }
 

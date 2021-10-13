@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import classes from './ContactPage.module.css';
 
 const ContactPage = (props) => {
+    document.title = 'Priti Bhunia | Contact';
+
     const emailRef = useRef();
     const nameRef = useRef();
     const messageRef = useRef();
@@ -14,7 +16,7 @@ const ContactPage = (props) => {
 
     return (
         <div className={`${classes.ContactPage} ani-popIn`}>
-            <div className={classes.ContactCard}>
+            <div className={`${classes.ContactCard} container`}>
                 <div className={`${classes.ContactHeader} text-uppercase mb-5`}>Contact</div>
                 <div className={classes.StaticText}>Have a question?</div>
                 <form className={classes.ContactForm} onSubmit={formSubmitHandler}>

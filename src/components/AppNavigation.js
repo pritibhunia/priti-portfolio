@@ -3,18 +3,18 @@ import { NavLink } from 'react-router-dom'
 import './AppNavigation.css'
 
 const AppNavigation = (props) => {
-   const navbar = useRef();
+    const navbar = useRef();
 
-   const toggleNavbar = () => {
-       navbar.current.classList.remove('show');
-   }
+    const toggleNavbar = () => {
+        navbar.current.classList.remove('show');
+    }
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light py-0 bg-black">
+        <nav className="navbar navbar-expand-md py-0 bg-black">
             <div className="container">
                 {/* <NavLink className="navbar-brand" to="/">Priti Bhunia</NavLink> */}
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                <button className="navbar-toggler ms-auto bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i className="bi bi-list text-white fs-1"></i>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav" ref={navbar}>
                     {/* <div className="me-auto"></div> */}
@@ -29,7 +29,7 @@ const AppNavigation = (props) => {
                             <NavLink className="nav-link" to="/resume" activeClassName="active" onClick={toggleNavbar}><span>Resume</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/blog" activeClassName="active" onClick={toggleNavbar}><span>Blog</span></NavLink>
+                            <NavLink className="nav-link" to="/blog" activeClassName="active" onClick={toggleNavbar}><span>Blogs / Projects</span></NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/contact" activeClassName="active" onClick={toggleNavbar}><span>Contact</span></NavLink>

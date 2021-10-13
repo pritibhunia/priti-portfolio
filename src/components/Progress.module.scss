@@ -1,0 +1,34 @@
+.progress {
+    display         : flex;
+    background-color: #0badb3;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .progressLabel {
+        flex-basis : 17%;
+        color      : white;
+        font-weight: bold;
+    }
+
+    .progressBar {
+        flex-basis      : 83%;
+        height          : 100%;
+        background-color: #8dadae;
+        border-radius   : 0px;
+        font-size       : 1rem;
+
+        div {
+            background-color: #077d82;
+            width           : 0%;
+            animation       : progress 1.4s ease-in-out 0.2s;
+        }
+    }
+}
+
+@keyframes progress {
+    from {
+        width: 0px;
+    }
+}
