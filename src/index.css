@@ -96,9 +96,9 @@ code {
 }
 
 .ani-slideIn-up {
-  animation: slideUp 0.9s forwards;
+  animation: slideUp 0.5s forwards;
 }
 
 .ani-slideIn-down {
-  animation: slideDown 0.9s forwards;
+  animation: slideDown 0.5s forwards;
 }

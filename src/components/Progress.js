@@ -17,7 +17,7 @@ const Progress = (props) => {
 
 Progress.propTypes = {
     label: PropTypes.string,
-    value: PropTypes.string
+    value: PropTypes.number
 }
 
 export default Progress

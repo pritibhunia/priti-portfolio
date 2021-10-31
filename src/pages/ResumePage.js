@@ -16,21 +16,21 @@ const ResumePage = (props) => {
                     <div className={classes.githubcv}>
                         <a href={cvLink} target="new">CV</a>
                         <a href="https://github.com/pritibhunia" target="new"> <i className="bi bi-github"></i> </a>
-                        <a href="https://www.linkedin.com/in/pritibhunia" target="new"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.facebook.com/bhuniapriti" target="new"><i class="bi bi-facebook"></i></a>
-                        <a href="https://twitter.com/pritibhunia" target="new"><i class="bi bi-twitter"></i></a>
-                        <a href="https://pritibhunia.medium.com" target="new"><i class="bi bi-globe"></i></a>
+                        <a href="https://www.linkedin.com/in/pritibhunia" target="new"><i className="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/bhuniapriti" target="new"><i className="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/pritibhunia" target="new"><i className="bi bi-twitter"></i></a>
+                        <a href="https://pritibhunia.medium.com" target="new"><i className="bi bi-globe"></i></a>
                     </div>
                 </div>
                 <div className={`${classes.body} col-12 col-lg-9`}>
                     <h2 className="greeting" id="hello">Hello!!!</h2>
                     <p><em>I am a Software Engineer working with Siemens Healthineers as a Senior Engineer - Design & Development based in Bangalore, India</em></p>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="mailto:pritibhunia@gmail.com">Email</a></li>
-                        <li class="breadcrumb-item"><a href="https://pritibhunia.medium.com/">Website</a></li>
-                        <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/pritibhunia/">LinkedIn</a></li>
-                        <li class="breadcrumb-item"><a href="https://github.com/pritibhunia/">GitHub</a></li>
-                        <li class="breadcrumb-item"><a href="https://twitter.com/pritibhunia/">Twitter</a></li>
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><a href="mailto:pritibhunia@gmail.com">Email</a></li>
+                        <li className="breadcrumb-item"><a href="https://pritibhunia.medium.com/">Website</a></li>
+                        <li className="breadcrumb-item"><a href="https://www.linkedin.com/in/pritibhunia/">LinkedIn</a></li>
+                        <li className="breadcrumb-item"><a href="https://github.com/pritibhunia/">GitHub</a></li>
+                        <li className="breadcrumb-item"><a href="https://twitter.com/pritibhunia/">Twitter</a></li>
                     </ol>
                     <h2 id="work-experience">Work Experience</h2>
                     <p>

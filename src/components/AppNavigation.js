@@ -5,7 +5,9 @@ import './AppNavigation.css'
 const AppNavigation = (props) => {
     const navbar = useRef();
 
-    const toggleNavbar = () => {
+    const menuClickHandler = () => {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        window.scrollTo(0, 0);
         navbar.current.classList.remove('show');
     }
 
@@ -20,19 +22,19 @@ const AppNavigation = (props) => {
                     {/* <div className="me-auto"></div> */}
                     <ul className="navbar-nav nav-fill">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/" activeClassName="active" exact onClick={toggleNavbar}><span>Home</span></NavLink>
+                            <NavLink className="nav-link" to="/" activeClassName="active" exact onClick={menuClickHandler}><span>Home</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/about" activeClassName="active" onClick={toggleNavbar}><span>About</span></NavLink>
+                            <NavLink className="nav-link" to="/about" activeClassName="active" onClick={menuClickHandler}><span>About</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/resume" activeClassName="active" onClick={toggleNavbar}><span>Resume</span></NavLink>
+                            <NavLink className="nav-link" to="/resume" activeClassName="active" onClick={menuClickHandler}><span>Resume</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/blog" activeClassName="active" onClick={toggleNavbar}><span>Blogs / Projects</span></NavLink>
+                            <NavLink className="nav-link" to="/blog" activeClassName="active" onClick={menuClickHandler}><span>Blogs / Projects</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/contact" activeClassName="active" onClick={toggleNavbar}><span>Contact</span></NavLink>
+                            <NavLink className="nav-link" to="/contact" activeClassName="active" onClick={menuClickHandler}><span>Contact</span></NavLink>
                         </li>
                     </ul>
                 </div>

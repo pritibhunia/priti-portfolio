@@ -1,0 +1,78 @@
+.modal__root {
+    display        : flex;
+    justify-content: center;
+
+    .Modal {
+        z-index         : 10000;
+        position        : fixed;
+        max-width       : 80vw;
+        max-height      : 80vh;
+        min-width       : 30vw;
+        min-height      : 30vh;
+        background-color: white;
+        top             : 10vh;
+        border          : 1px solid rgba(0, 0, 0, 0.1);
+        border-radius   : 4px;
+        display         : flex;
+        flex-direction  : column;
+        resize          : both;
+        overflow        : auto;
+
+        &.maximize {
+            max-width : none;
+            max-height: none;
+            top       : 0;
+            width     : 100vw !important;
+            height    : 100vh !important;
+            resize    : unset;
+        }
+
+        .Modal__header {
+            display        : flex;
+            justify-content: space-between;
+            border-bottom  : 1px solid rgba(0, 0, 0, 0.1);
+            padding        : 5px 10px;
+            flex-shrink    : 0;
+
+            .Modal__header__title {
+                color: gray;
+                font-size: larger;
+            }
+
+            .Modal__header__action {
+                display: flex;
+                column-gap: 0.5rem;
+
+                button {
+                    box-sizing      : content-box;
+                    width           : 25px;
+                    height          : 25px;
+                    padding         : 0;
+                    font-size       : 16px;
+                    font-weight     : bold;
+                    color           : gray;
+                    border          : 0;
+                    opacity         : 0.7;
+                    background-color: transparent;
+
+                    &:hover {
+                        color          : #000;
+                    }
+                }
+            }
+        }
+
+        .Modal__body {
+            flex-grow: 1;
+            padding  : 5px 10px;
+            overflow : auto;
+        }
+
+        .Modal__footer {
+            display        : flex;
+            justify-content: flex-end;
+            border-top     : 1px solid rgba(0, 0, 0, 0.1);
+            flex-shrink    : 0;
+        }
+    }
+}
