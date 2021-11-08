@@ -21,7 +21,7 @@
         flex-direction: column;
         justify-content: center;
         align-self: center;
-        background-color: rgba($color: #0badb3, $alpha: 0.8);
+        background-color: rgba($color: #0badb3, $alpha: 0.95);
         transition: all 0.5s;
     }
 
@@ -39,7 +39,8 @@
         z-index   : 20;
         // transform : translateY(200%);
         // opacity   : 0;
-        font-size : 2rem;
+        font-size : 1rem;
+        font-weight: bold;
         color     : black;
         transition: all 0.5s;
     }
