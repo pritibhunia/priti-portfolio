@@ -1,36 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.947179d2.chunk.css",
-    "main.js": "/static/js/main.93f4de81.chunk.js",
-    "main.js.map": "/static/js/main.93f4de81.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f90b91e5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f90b91e5.js.map",
+    "main.css": "/static/css/main.a708c555.chunk.css",
+    "main.js": "/static/js/main.7b56e958.chunk.js",
+    "main.js.map": "/static/js/main.7b56e958.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.852a7633.js",
+    "runtime-main.js.map": "/static/js/runtime-main.852a7633.js.map",
     "static/css/2.792e8ee4.chunk.css": "/static/css/2.792e8ee4.chunk.css",
-    "static/js/2.6360062f.chunk.js": "/static/js/2.6360062f.chunk.js",
-    "static/js/2.6360062f.chunk.js.map": "/static/js/2.6360062f.chunk.js.map",
-    "static/js/3.e82fee21.chunk.js": "/static/js/3.e82fee21.chunk.js",
-    "static/js/3.e82fee21.chunk.js.map": "/static/js/3.e82fee21.chunk.js.map",
+    "static/js/2.5b09a189.chunk.js": "/static/js/2.5b09a189.chunk.js",
+    "static/js/2.5b09a189.chunk.js.map": "/static/js/2.5b09a189.chunk.js.map",
+    "static/js/3.17b75523.chunk.js": "/static/js/3.17b75523.chunk.js",
+    "static/js/3.17b75523.chunk.js.map": "/static/js/3.17b75523.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.792e8ee4.chunk.css.map": "/static/css/2.792e8ee4.chunk.css.map",
-    "static/css/main.947179d2.chunk.css.map": "/static/css/main.947179d2.chunk.css.map",
-    "static/js/2.6360062f.chunk.js.LICENSE.txt": "/static/js/2.6360062f.chunk.js.LICENSE.txt",
-    "static/media/CICD.fb1380fc.png": "/static/media/CICD.fb1380fc.png",
+    "static/css/main.a708c555.chunk.css.map": "/static/css/main.a708c555.chunk.css.map",
+    "static/js/2.5b09a189.chunk.js.LICENSE.txt": "/static/js/2.5b09a189.chunk.js.LICENSE.txt",
     "static/media/CV1.b8df2213.pdf": "/static/media/CV1.b8df2213.pdf",
     "static/media/index.css": "/static/media/NotoSans-Regular.fa11626f.ttf",
-    "static/media/bannerImg.f5bf8e89.jpeg": "/static/media/bannerImg.f5bf8e89.jpeg",
-    "static/media/bgImage.jpeg": "/static/media/bgImage.855d64ac.jpeg",
-    "static/media/blog_1.jpeg": "/static/media/blog_1.b67578e5.jpeg",
-    "static/media/blog_2.png": "/static/media/blog_2.c74740f2.png",
-    "static/media/blog_3.jpeg": "/static/media/blog_3.ca9a1765.jpeg",
-    "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.dfd0ea12.woff2",
-    "static/media/containerization.1f6c803b.png": "/static/media/containerization.1f6c803b.png",
-    "static/media/priti.822829bd.jpg": "/static/media/priti.822829bd.jpg"
+    "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.dfd0ea12.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.f90b91e5.js",
+    "static/js/runtime-main.852a7633.js",
     "static/css/2.792e8ee4.chunk.css",
-    "static/js/2.6360062f.chunk.js",
-    "static/css/main.947179d2.chunk.css",
-    "static/js/main.93f4de81.chunk.js"
+    "static/js/2.5b09a189.chunk.js",
+    "static/css/main.a708c555.chunk.css",
+    "static/js/main.7b56e958.chunk.js"
   ]
 }
