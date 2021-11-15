@@ -27,7 +27,7 @@ const ContactPage = (props) => {
     }
 
     const postMessage = () => {
-        fetch('https://priti-portfolio-default-rtdb.firebaseio.com/messages.json', {
+        fetch('https://portfolio-31d91-default-rtdb.firebaseio.com/messages.json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'Application/json'
