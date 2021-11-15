@@ -30,12 +30,22 @@ const BlogProjectPage = () => {
             {/* <Switch>
                 <Route path="/blog/1" exact>
                     <Modal onClose={modalCloseHandler} title="Blog 1">
-                        <Modal.Body>Blog 1</Modal.Body>
+                    <Modal.Body>
+                            <iframe
+                                src="https://github.com/pritibhunia/IADExtraction"
+                                frameBorder="0" title="Blog1"
+                            ></iframe>
+                        </Modal.Body>
                     </Modal>
                 </Route>
                 <Route path="/blog/2" exact>
                     <Modal onClose={modalCloseHandler} title="Blog 2">
-                        <Modal.Body>Blog 2</Modal.Body>
+                    <Modal.Body>
+                            <iframe
+                                src="https://github.com/pritibhunia/AKS"
+                                frameBorder="0" title="Blog2"
+                            ></iframe>
+                        </Modal.Body>
                     </Modal>
                 </Route>
                 <Route path="/blog/3" exact>
@@ -44,21 +54,21 @@ const BlogProjectPage = () => {
                     </Modal>
                 </Route>
                 <Route path="/blog/4" exact>
-                    <Modal onClose={modalCloseHandler} title="Blog 3">
+                    <Modal onClose={modalCloseHandler} title="Blog 4">
                         <Modal.Body>
                             <iframe
                                 src="https://pritibhunia.medium.com/integrating-azure-api-management-with-azure-virtual-network-and-azure-application-gateway-920eb532c049"
-                                frameBorder="0" title="Blog1"
+                                frameBorder="0" title="Blog4"
                             ></iframe>
                         </Modal.Body>
                     </Modal>
                 </Route>
                 <Route path="/blog/5" exact>
-                    <Modal onClose={modalCloseHandler} title="Blog 3">
+                    <Modal onClose={modalCloseHandler} title="Blog 5">
                         <Modal.Body>
                             <iframe
                                 src="https://pritibhunia.medium.com/go-goa-the-advent-of-a-wonderful-journey-1690f571667"
-                                frameBorder="0" title="Blog1"
+                                frameBorder="0" title="Blog5"
                             ></iframe>
                         </Modal.Body>
                     </Modal>
