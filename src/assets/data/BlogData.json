@@ -1,0 +1,55 @@
+{
+    "blogs": [
+        {
+            "blogId": 1,
+            "blogImg": "/images/blog_3.jpeg",
+            "blogTitle": "A cup of Coffee and peace of my mind",
+            "blogDesc": "When we are grappling through the day and striving to keep our inner selves together, nothing can be better than a cup of coffee to help us fight through that.",
+            "blogUrl": {
+                "url": "/blog/1",
+                "urlTitle": "See Inside"
+            }
+        },
+        {
+            "blogId": 2,
+            "blogImg": "/images/IAD.jpg",
+            "blogTitle": "Component Details Extraction from Architecture Diagram",
+            "blogDesc": "Java",
+            "blogUrl": {
+                "url": "https://github.com/pritibhunia/IADExtraction",
+                "urlTitle": "Know More",
+                "openOnNew": true
+            }
+        },
+        {
+            "blogId": 3,
+            "blogImg": "/images/DevOpsPipeline.png",
+            "blogTitle": "End-to-end Pipeline for Azure Kubernetes Services",
+            "blogDesc": "AKS / Docker / YAML",
+            "blogUrl" :{
+                "url": "/blog/3",
+                "urlTitle": "Know More"
+            }
+        },
+        {
+            "blogId": 4,
+            "blogImg": "/images/blog_2.png",
+            "blogTitle": "My First Technical Blog",
+            "blogDesc": "Integrating Azure API Management with Azure Virtual Network and Azure Application Gateway",
+            "blogUrl": {
+                "url": "/blog/4",
+                "urlTitle": "Details Inside"
+            }
+        },
+        {
+            "blogId": 5,
+            "blogImg": "/images/Goa.jpg",
+            "blogTitle": "A trip to remember",
+            "blogDesc": "Me and my friends: A journey which I am going to remember for my whole life",
+            "blogUrl": {
+                "url": "/blog/5",
+                "urlTitle": "Take a Look!"
+            }
+        }
+    ]
+}

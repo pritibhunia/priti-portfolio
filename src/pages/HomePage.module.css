@@ -56,7 +56,6 @@
 
 
 .HomePage .bgImage {
-    background-image     : url('../assets/images/bgImage.jpeg');
     background-repeat    : no-repeat;
     background-attachment: fixed;
     background-size      : cover;

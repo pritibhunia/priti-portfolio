@@ -3,7 +3,6 @@ import Features from '../components/Features';
 import Section from '../components/Section';
 import SkillSet from '../components/SkillSet';
 import classes from './AboutPage.module.scss';
-// import moduleName from '../assets/images/dummy.jpg'
 
 const AboutPage = (props) => {
     document.title = 'Priti Bhunia | About Me';

@@ -1,7 +1,6 @@
 import React from 'react';
+import cvLink from '../assets/docs/CV1.pdf';
 import classes from './ResumePage.module.scss';
-import image from '../assets/images/priti.jpg';
-import cvLink from '../assets/docs/CV1.pdf'
 
 const ResumePage = (props) => {
     document.title = 'Priti Bhunia | Resume';
@@ -11,7 +10,7 @@ const ResumePage = (props) => {
             <div className="row container">
                 <div className={`${classes.header} col-12 col-lg-3`}>
                     <h1 className={classes.title}>Priti Bhunia</h1>
-                    <img className={classes.image} src={image} alt="" />
+                    <img className={classes.image} src="/images/priti.jpg" alt="" />
                     <a className={classes.email} href="mailto:pritibhunia@gmail.com">pritibhunia@gmail.com</a>
                     <div className={classes.githubcv}>
                         <a href={cvLink} target="new">CV</a>
@@ -82,13 +81,15 @@ const ResumePage = (props) => {
 
                     <h2 id="interests">Interests</h2>
                     <p><strong>Technical</strong></p>
-                    <p>I like to learn new technology stack and spend time on doing research on new topics.
+                    <p>I like to learn new technology stack and spend time on doing research on new topics. </p>
+                    <p>Currently I am exploring React, Angular and Python.
                         <br />
                         <br />
                     </p>
                     <p><strong>Personal</strong></p>
                     <p>I like to spend my leisure by reading novels (I can read anything and everything), listening to music or sometimes dancing.</p>
-                    <p>I feel alive when I am travelling and exploring the new places, new culture and specially meeting new people.
+                    <p>I feel alive when I am travelling and exploring the new places, new culture and specially meeting new people. </p>
+                    <p>I believe in building and maintaining small habits that lead to success. My day starts with a workout and ends with a meditation. 
                         <br />
                         <br />
                     </p>

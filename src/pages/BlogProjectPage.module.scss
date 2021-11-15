@@ -1,0 +1,22 @@
+.BlogList {
+  display       : flex;
+  flex-direction: row;
+  column-gap    : 1rem;
+  row-gap       : 1rem;
+  flex-wrap     : wrap;
+
+  >.blog {
+    flex: 1 1 30%;
+  }
+
+  @media (max-width: 760px) {
+    & {
+      flex-direction: column;
+
+      >.blog {
+        flex-basis: unset;
+        width: auto;
+      }
+    }
+  }
+}

@@ -44,16 +44,26 @@ Card.Content.propTypes = {
 }
 
 Card.Link = (props) => {
-    return (
-        <Link to={props.to} className={`${classes.link} btn btn-outline-danger`}>
-            {props.children}
-        </Link>
-    );
+    if (props.openOnNew) {
+        return (
+            <a href={props.to} className={`${classes.link} btn btn-outline-danger`} target="new">
+                {props.children}
+            </a>
+        );
+
+    } else {
+        return (
+            <Link to={props.to} className={`${classes.link} btn btn-outline-danger`}>
+                {props.children}
+            </Link>
+        );
+    }
 }
 
 Card.Link.propTypes = {
     className: PropTypes.string,
-    to: PropTypes.string
+    to: PropTypes.string,
+    openOnNew: PropTypes.bool
 }
 
 export default Card

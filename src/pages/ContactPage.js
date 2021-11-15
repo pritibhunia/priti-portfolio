@@ -1,17 +1,55 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
+import GrowlMessage from '../components/GrowlMessage';
 import classes from './ContactPage.module.css';
 
 const ContactPage = (props) => {
     document.title = 'Priti Bhunia | Contact';
+    const FORM_STATE = { INIT: 1, SUBMITTED: 2, SUCCESS: 3, FAILED: 4 };
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formStatus, setFormStatus] = useState(FORM_STATE.INIT);
 
-    const emailRef = useRef();
-    const nameRef = useRef();
-    const messageRef = useRef();
-    const formData = useState({ name: '', email: '', message: '' });
+    const updateData = (event) => {
+        const field = event.target.name;
+        const val = event.target.value;
+        setFormData(prevState => ({ ...prevState, [field]: val }));
+    }
+
+    const validateForm = () => {
+        return false;
+    }
 
     const formSubmitHandler = (event) => {
         event.preventDefault();
-        console.log(emailRef.current.value, nameRef.current.value, messageRef.current.value);
+        setFormStatus(FORM_STATE.SUBMITTED);
+        if (validateForm) {
+            postMessage();
+        }
+    }
+
+    const postMessage = () => {
+        fetch('https://priti-portfolio-default-rtdb.firebaseio.com/messages.json', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'Application/json'
+            },
+            body: JSON.stringify(formData)
+        }).then((res) => {
+            console.log(res);
+            if (res.ok) {
+                setFormStatus(FORM_STATE.SUCCESS);
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                setFormStatus(FORM_STATE.FAILED);
+            }
+        }).catch((reason) => {
+            console.log(reason);
+            setFormStatus(FORM_STATE.FAILED);
+            console.error(reason);
+        })
+    }
+
+    const growlCloseHandler = (event) => {
+        setFormStatus(FORM_STATE.INIT);
     }
 
     return (
@@ -20,13 +58,12 @@ const ContactPage = (props) => {
                 <div className={`${classes.ContactHeader} text-uppercase mb-5`}>Contact</div>
                 <div className={classes.StaticText}>Have a question?</div>
                 <form className={classes.ContactForm} onSubmit={formSubmitHandler}>
-
-                    {/* <div className={classes.NameEmailInput}> */}
-                    <input className="form-control" type='text' name='name' placeholder='Your Name' ref={nameRef} value={formData.name} required/>
-                    <input className="form-control" type='email' name='email' placeholder='Your Email' ref={emailRef} value={formData.email} required/>
-                    {/* </div> */}
-                    <textarea className="form-control" name='message' placeholder='Your Message' ref={messageRef} required>{formData.message}</textarea>
-                    <button type='submit' className='btn btn-outline-info'>Send</button>
+                    <input className="form-control" type='text' name='name' placeholder='Your Name' value={formData.name} autoComplete="off" onChange={updateData} required/>
+                    <input className="form-control" type='email' name='email' placeholder='Your Email' value={formData.email} autoComplete="off" onChange={updateData} required/>
+                    <textarea className="form-control" name='message' placeholder='Your Message' onChange={updateData} value={formData.message} required></textarea>
+                    <button type='submit' className='btn btn-outline-info' disabled={formStatus === FORM_STATE.SUBMITTED}>Send</button>
+                    {formStatus === FORM_STATE.SUCCESS && <GrowlMessage type='success' onClose={growlCloseHandler}>The message has been posted successfully.</GrowlMessage>}
+                    {formStatus === FORM_STATE.FAILED && <GrowlMessage type='error' onClose={growlCloseHandler}>Error occured while posting the message. Please try again later.</GrowlMessage>}
                 </form>
                 <div className={classes.SocialLinks}>
                     <h3 className="mb-4 text-uppercase">You can reach me out</h3>

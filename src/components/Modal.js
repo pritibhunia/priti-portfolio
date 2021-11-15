@@ -39,7 +39,7 @@ const Modal = ({ allowMax, allowClose, title, onClose, children }) => {
         <>
             <Overlay></Overlay>
             <div className={`${classes.Modal} ani-slideIn-down ${isMax ? classes.maximize : ''}`}>
-                {title && BuildHeader()}
+                {BuildHeader()}
                 {children}
             </div>
         </>,

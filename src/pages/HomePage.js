@@ -1,7 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import data from '../assets/data/HomePage.data.json';
-import bannerImg from '../assets/images/bannerImg.jpeg';
 import TypingContent from '../components/TypingContent';
 import classes from './HomePage.module.css';
 
@@ -10,9 +9,10 @@ const HomePage = () => {
     return (
         <div className={`${classes.HomePage} d-flex flex-column`}>
             <div className="row flex-grow-1 align-items-center">
-                <div className={classes.bgImage}></div>
+                <div className={classes.bgImage} style={{ 
+                    backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bgImage.jpeg'})` }}></div>
                 <div className={`${classes.banner} col-lg-6 col-md-12`}>
-                    <img className={`${classes.bannerImg} ani-popIn`} src={bannerImg} alt="Banner" />
+                    <img className={`${classes.bannerImg} ani-popIn`} src="/images/bannerImg.jpeg" alt="Banner" />
                 </div>
                 <div className={`${classes.content}  col-lg-6 col-md-12`}>
                     <h1 className={classes.greet}>Hello!!!</h1>

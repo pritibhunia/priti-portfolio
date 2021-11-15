@@ -44,7 +44,7 @@
 .ContactPage .ContactCard .ContactForm {
     display       : flex;
     flex-direction: column;
-    row-gap       : 2px;
+    row-gap       : 5px;
     width         : 100%;
     padding       : 0 10px 20px 10px;
 }
@@ -58,16 +58,17 @@
 
 .ContactPage .ContactCard .ContactForm textarea {
     min-height: 100px;
-    width : 100%;
-    resize    : both;
+    width     : 100%;
+    resize    : vertical;
 }
 
 .ContactPage .ContactCard .ContactForm *:is(input):focus,
 .ContactPage .ContactCard .ContactForm textarea:focus {
     border-color: #6dfafb;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(109 250 251 / 25%);
+    outline     : 0;
+    box-shadow  : 0 0 0 0.25rem rgb(109 250 251 / 25%);
 }
+
 @media (min-width: 768px) {
     .ContactPage .ContactCard .ContactForm textarea {
         min-width: 500px;
