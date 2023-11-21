@@ -5,6 +5,7 @@ import Blog1 from '../components/blogs/Blog1';
 import Blog3 from '../components/blogs/Blog3';
 import Blog4 from '../components/blogs/Blog4';
 import Blog5 from '../components/blogs/Blog5';
+import Blog6 from '../components/blogs/Blog6';
 import Modal from '../components/Modal';
 
 const BlogPages = {
@@ -12,7 +13,8 @@ const BlogPages = {
     Blog1 : <Blog1/>,
     Blog3: <Blog3/>,
     Blog4: <Blog4/>,
-    Blog5: <Blog5/>
+    Blog5: <Blog5/>,
+    Blog6: <Blog6/>
 }
 
 const findBlog = (blogId) => {
