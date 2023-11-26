@@ -1,5 +1,5 @@
 import React from 'react';
-import cvLink from '../assets/docs/CV1.pdf';
+import cvLink from '../assets/docs/CV2.pdf';
 import classes from './ResumePage.module.scss';
 
 const ResumePage = (props) => {
@@ -23,7 +23,7 @@ const ResumePage = (props) => {
                 </div>
                 <div className={`${classes.body} col-12 col-lg-9`}>
                     <h2 className="greeting" id="hello">Hello!!!</h2>
-                    <p><em>I am a Software Engineer working with Siemens Healthineers as a Senior Engineer - Design & Development based in Bangalore, India</em></p>
+                    <p><em>I am a Software Developer with 7 years of working experience, now pursuing my Master's in Automation & IT from TH Köln</em></p>
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="mailto:pritibhunia@gmail.com">Email</a></li>
                         <li className="breadcrumb-item"><a href="https://pritibhunia.medium.com/">Website</a></li>
@@ -34,7 +34,7 @@ const ResumePage = (props) => {
                     <h2 id="work-experience">Work Experience</h2>
                     <p>
                         <strong>Senior Engineer - Design & Development</strong> @ <a href="https://www.corporate.siemens-healthineers.com/">Siemens Healthineers</a>
-                        <em> (May 2021 - Present)</em>
+                        <em> (May 2021 - Sep 2023)</em>
                     </p>
                     <ul>
                         <li>Enhancing and developing new features for diagnostic imaging based digital healthcare product.</li>
@@ -95,6 +95,13 @@ const ResumePage = (props) => {
                     </p>
 
                     <h2 id="education">Education</h2>
+                    <p>
+                        <strong>Master of Engineering </strong>
+                        in Automation & IT
+                        <a href="https://www.stcet.org/"> St. Thomas’ College of Engineering & Technology</a>
+                        <span> - Köln, Deutschland (2023 - Present)</span>
+                    </p>
+
                     <p>
                         <strong>Bachelor of Technology </strong>
                         in Electronics and Communication Engineering
